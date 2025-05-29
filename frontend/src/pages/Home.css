@@ -1,0 +1,122 @@
+/* Container with purple-blue gradient background */
+.home-hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Inner content box with some padding and subtle shadow */
+  .home-content {
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* Large welcoming title */
+  .home-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Subtitle with lighter font weight and slight opacity */
+  .home-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+  
+  /* Flex container for the two action cards */
+  .home-actions {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Each card style */
+  .home-card {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    flex: 1 1 280px;
+    max-width: 320px;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(238, 9, 121, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Icon styling inside cards */
+  .home-card svg {
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+  
+  /* Card title */
+  .home-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  /* Card description */
+  .home-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.95;
+  }
+  
+  /* Hover effect: scale up and stronger shadow */
+  .home-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 14px 40px rgba(238, 9, 121, 0.8);
+  }
+  
+  /* Different gradient for blog list card */
+  .home-card.blog-list {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    box-shadow: 0 8px 25px rgba(106, 17, 203, 0.6);
+  }
+  
+  .home-card.blog-list:hover {
+    box-shadow: 0 14px 40px rgba(106, 17, 203, 0.8);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 720px) {
+    .home-title {
+      font-size: 2.4rem;
+    }
+    .home-subtitle {
+      font-size: 1.1rem;
+    }
+    .home-actions {
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-content {
+      padding: 2rem 1rem;
+    }
+    .home-actions {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  

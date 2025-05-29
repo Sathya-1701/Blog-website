@@ -1,0 +1,125 @@
+/* Container */
+.bloglist-container {
+    max-width: 720px;
+    margin: 3rem auto 5rem;
+    padding: 0 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+  }
+  
+  /* Title with gradient */
+  .bloglist-title {
+    font-size: 5rem;
+    
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 3rem;
+     background: linear-gradient(45deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+  }
+  
+  /* List resets */
+  .blog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Blog item card */
+  .blog-item {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(38, 0, 121, 0.15);
+    margin-bottom: 3rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(38, 0, 121, 0.3);
+  }
+  
+  /* Link wrapper */
+  .blog-link {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Blog image */
+  .blog-image {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-bottom: 4px solid #6a11cb;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-item:hover .blog-image {
+    transform: scale(1.05);
+  }
+  
+  /* Content area */
+  .blog-content {
+    padding: 1.8rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  /* Title with gradient underline */
+  .blog-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .blog-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border-radius: 2px;
+  }
+  
+  /* Summary */
+  .blog-summary {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #444;
+    flex-grow: 1;
+  }
+  
+  /* Username */
+  .blog-username {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2575fc;
+    text-align: right;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    .blog-image {
+      height: 200px;
+    }
+    .blog-title {
+      font-size: 1.5rem;
+    }
+    .bloglist-title {
+      font-size: 2.4rem;
+    }
+  }
+  
